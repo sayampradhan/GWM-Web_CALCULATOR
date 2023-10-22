@@ -1,3 +1,4 @@
+/* Reset default margin and padding for the body */
 body {
     padding: 0;
     margin: 0;
@@ -6,23 +7,27 @@ body {
     align-items: center;
     min-height: 100vh;
     user-select: none;
-    background: teal
+    background: teal; /* Set background color */
 }
 
+/* Style for the main container */
 .container {
     margin-left: 1.8em;
     padding: 20px;
     border: 3px solid black;
     border-radius: 10px;
-    box-shadow: 13px 13px 20px #a260e0,
-        -13px -13px 20px #a260e0;
-    animation: mymove 10s infinite;
+    box-shadow: 13px 13px 20px #a260e0, -13px -13px 20px #a260e0;
+    animation: mymove 10s infinite; /* Apply animation */
 }
 
+/* Keyframes animation for .container border */
 @keyframes mymove {
-    50% {border: 15px solid black;}
+    50% {
+        border: 15px solid black; /* Border animation */
+    }
 }
 
+/* Style for content inside the container */
 .content {
     width: 100%;
     margin-top: 1.7em;
@@ -32,25 +37,26 @@ body {
     flex-direction: column;
 }
 
+/* Style for buttons within .row elements */
 .row button {
     width: 60px;
     height: 30px;
     font-size: 16px;
-    border: beige;
+    border: beige; /* Border color */
     outline: grey;
     margin: 5px;
     border-radius: 9px;
     transition: .1s;
-    box-shadow: 5px 5px 8px grey,
-    -5px -5px 8px grey;
+    box-shadow: 5px 5px 8px grey, -5px -5px 8px grey; /* Button shadow */
 }
 
+/* Button hover effect */
 .row button:hover {
-    box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1),
-        inset -5px -5px 8px #8d2222;
-    background: #db6060;
+    box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1), inset -5px -5px 8px #8d2222;
+    background: #db6060; /* Change background color on hover */
 }
 
+/* Style for the display screen */
 .display #screen {
     margin-bottom: .5em;
     width: auto;
@@ -60,40 +66,41 @@ body {
     border: 3px solid black;
     text-align: right;
     padding-right: .5em;
-    background: white;
+    background: white; /* Screen background color */
     border-radius: 9px;
-    box-shadow: inset 8px 8px 8px #cbced1,
-        inset -8px -8px 8px #ffffff;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff; /* Screen shadow */
 }
 
+/* Styling for the 'eval' button */
 #eval {
     background: #33ccff;
     color: #fff;
-    box-shadow: inset 5px 5px 8px #66d9ff,
-        inset -5px -5px 8px #00ace6;
+    box-shadow: inset 5px 5px 8px #66d9ff, inset -5px -5px 8px #00ace6;
 }
 
+/* 'eval' button hover effect */
 #eval:hover {
-    box-shadow: inset 5px 5px 8px #00ace6,
-        inset -5px -5px 8px #00ace6;
+    box-shadow: inset 5px 5px 8px #00ace6, inset -5px -5px 8px #00ace6;
 }
 
+/* Styling for the 'ac' button */
 #ac {
     background: #ce5f1e;
     color: #fff;
 }
 
+/* 'ac' button hover effect */
 #ac:hover {
-    box-shadow: inset 5px 5px 8px #2eb82e,
-        inset -5px -5px 8px #33cc33;
+    box-shadow: inset 5px 5px 8px #2eb82e, inset -5px -5px 8px #33cc33;
 }
 
+/* Styling for the 'ce' button */
 #ce {
     background: #ff3399;
     color: #fff;
 }
 
+/* 'ce' button hover effect */
 #ce:hover {
-    box-shadow: inset 5px 5px 8px #e60073,
-        inset -5px -5px 8px #ff3399;
+    box-shadow: inset 5px 5px 8px #e60073, inset -5px -5px 8px #ff3399;
 }
