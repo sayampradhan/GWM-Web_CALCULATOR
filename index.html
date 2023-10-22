@@ -7,18 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Calculator Container -->
     <div class="container">
         <h1>GWC-CALCULATOR</h1>
+
+        <!-- Display Area -->
         <div class="display">
             <input id="screen" type="text" placeholder="0">
         </div>
+
+        <!-- Calculator Buttons -->
         <div class="btns">
             <div class="row">
+                <!-- Clear Entry Button -->
                 <button id="ce" onclick="backspc()">CE</button>
+                <!-- Factorial Button -->
                 <button onclick="fact()">x!</button>
                 <button class="btn">(</button>
                 <button class="btn">)</button>
                 <button class="btn">%</button>
+                <!-- All Clear Button -->
                 <button id="ac" onclick="screen.value=''">AC</button>
             </div>
 
@@ -51,10 +59,10 @@
 
             <div class="row">
                 <button onclick="e()">e</button>
-                <button onclick="pow()">x <span style="position: relative; bottom: .4em; right: .1em;">y</span>
-                </button>
+                <button onclick="pow()">x <span style="position: relative; bottom: .4em; right: .1em;">y</span></button>
                 <button class="btn">0</button>
                 <button class="btn">.</button>
+                <!-- Evaluate Button -->
                 <button id="eval" onclick="screen.value=eval(screen.value)">ANS</button>
                 <button class="btn">+</button>
             </div>
